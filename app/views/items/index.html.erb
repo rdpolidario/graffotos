@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+<h1>Products</h1>
+
+<%= form_tag(items_path, method: :get) do %>
+  <%= label_tag :category, 'Category: ' %>
+  <%= select_tag :category, 
+      options_for_select(
+          ['', 'Travel', 'Wildlife', 'Flowers', 'Landscapes'],
+          params[:category],
+      ),
+      onchange: 'this.form.submit();'
+  %>
+<% end %>
+
+<table class="catalog">
+
+<% @items.each do |item| %>
+  <div class="itemstyle">
+    
+        <div class="image">
+            <%= link_to (image_tag item.image_url, :style => "height:258px; width:258px"), item %>
+        </div>
+    
+        <div class="title">
+            <%= link_to item.title, item %>
+        </div>
+        <div class="description">
+            <%=h item.description %>
+        </div>
+        <div class="price">
+            <%= number_to_currency(item.price, :unit => "€") %>
+        </div>
+        <div class="links">
+            <% if session[:login] == 1 %>
+              <%= link_to 'Edit', edit_item_path(item) %> |
+              <%= link_to 'Delete', item, :confirm => 'Are you sure?', :method => :delete %>
+            <% else %>
+              <a href="/cart/<%= item.id %>">Add to Cart</a><br><br>
+            <% end %>
+
+        </div>
+   </div>
+<% end %>
+</table>
+    <p><%= link_to 'New item', new_item_path %></p>
+

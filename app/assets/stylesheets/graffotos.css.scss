@@ -1,0 +1,173 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* mixins, variables, etc. */
+
+$gray:#333333;
+$gray-medium-light: #eaeaea;
+$gray-light:#F7F8FA;
+$blue:#02ADEA;
+$orange:#FF9966;
+$pink:#CC6666;
+$pink2:#FBCDB7;
+
+/* universal */
+
+body {
+  padding-top: 60px;
+  color:$gray;
+}
+tr {
+  border-bottom:1px solid $gray-medium-light ;
+}
+td{
+  padding:10px;
+}
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  color:#999999;
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: $gray-light;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+
+/* header */
+#header{
+  background:$gray;
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+/*main picture*/
+#pic1 {
+ background-image: url("mainpic.jpg"); 
+ height:480px;
+}
+
+
+/* content */
+#container {
+  position: relative;
+  border: 0px solid gray;
+  background: white;
+  max-width: 1180px;
+  min-width: 300px;
+  margin: auto;
+}
+
+#content {
+	left: 0;
+    margin: 0px;
+    padding: 20px;
+    border: 0px solid gray;
+    width: auto;
+}
+
+/* items */
+.itemstyle {
+  width:270px;
+  height:auto;
+  border:1px solid $gray-medium-light ;
+  float:left;
+  padding:5px;
+  margin:5px;
+}
+.price {
+  color:$blue;
+  font-size:1.2em;
+  padding-top:7px;
+  padding-bottom:7px;
+}
+.cartprice{
+  color:$blue;
+  font-size:1em;
+  background: $gray-medium-light;
+}
+.title {
+  padding-top:10px;
+}
+.totalprice{
+  font-size:1.3em;
+}
+.bgdcol1{
+  background:$pink;
+}
+.bgdcol2{
+  background:$orange;
+}
+
+/* footer */
+
+#footer {
+  clear:left;
+  margin-top: 45px;
+  padding-top: 10px;
+  border-top: 1px solid $gray-medium-light;
+  color: $gray;
+  a {
+    color: red;
+    &:hover {
+      color: $blue;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+}
