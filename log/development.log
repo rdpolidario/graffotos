@@ -16059,3 +16059,24 @@ Processing by ItemsController#index as HTML
   Rendered layouts/_shim.html.erb (0.1ms)
   Rendered layouts/_footer.html.erb (0.1ms)
 Completed 200 OK in 240ms (Views: 238.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 89.101.116.120 at 2015-04-12 23:30:39 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 593ms (Views: 581.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mainpic.jpg" for 89.101.116.120 at 2015-04-12 23:30:40 +0000
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-12 23:30:42 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (44.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 414ms (Views: 403.7ms | ActiveRecord: 0.9ms)
