@@ -16080,3 +16080,1893 @@ Processing by ItemsController#index as HTML
   Rendered layouts/_shim.html.erb (0.4ms)
   Rendered layouts/_footer.html.erb (0.5ms)
 Completed 200 OK in 414ms (Views: 403.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 89.101.116.120 at 2015-04-12 23:44:43 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 632ms (Views: 620.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mainpic.jpg" for 89.101.116.120 at 2015-04-12 23:44:44 +0000
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-12 23:44:46 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (45.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 401ms (Views: 388.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/items/1" for 89.101.116.120 at 2015-04-12 23:44:50 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 278ms (Views: 271.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/1/edit" for 89.101.116.120 at 2015-04-12 23:44:54 +0000
+Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered items/_form.html.erb (20.2ms)
+  Rendered items/edit.html.erb within layouts/application (23.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 305ms (Views: 303.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-12 23:46:30 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (1.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" IS NULL[0m
+  Rendered items/index.html.erb within layouts/application (20.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 536ms (Views: 531.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/items/new" for 89.101.116.120 at 2015-04-12 23:46:37 +0000
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (3.4ms)
+  Rendered items/new.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 309ms (Views: 308.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/items" for 89.101.116.120 at 2015-04-12 23:47:11 +0000
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0hHhU67KmTwt+TtSHU26cpyH/zwKok2vFKmrVujZ8+tG/G8exZ+YQJyZTem9OH+VS4lV7U20j5tuUfDzhQ4/Ug==", "item"=>{"title"=>"", "description"=>"", "price"=>"", "image_url"=>"dsc_0483", "category"=>"Wildlife"}, "commit"=>"Create Item"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "items" ("title", "description", "image_url", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", ""], ["description", ""], ["image_url", "dsc_0483"], ["category", "Wildlife"], ["created_at", "2015-04-12 23:47:11.763145"], ["updated_at", "2015-04-12 23:47:11.763145"]]
+  [1m[35m (14.1ms)[0m  commit transaction
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items/7
+Completed 302 Found in 21ms (ActiveRecord: 14.9ms)
+
+
+Started GET "/items/7" for 89.101.116.120 at 2015-04-12 23:47:11 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered items/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 289ms (Views: 287.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-12 23:47:15 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (15.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 310ms (Views: 308.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Wildlife" for 89.101.116.120 at 2015-04-12 23:47:21 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Wildlife"}
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" = ?[0m  [["category", "Wildlife"]]
+  Rendered items/index.html.erb within layouts/application (20.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 265ms (Views: 263.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/dsc_0483" for 89.101.116.120 at 2015-04-12 23:47:21 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/dsc_0483"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (4.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (60.5ms)
+
+
+Started GET "/items/7" for 89.101.116.120 at 2015-04-12 23:47:27 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered items/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 230ms (Views: 227.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items/7/edit" for 89.101.116.120 at 2015-04-12 23:47:32 +0000
+Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered items/_form.html.erb (4.2ms)
+  Rendered items/edit.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 302ms (Views: 300.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-12 23:47:36 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (15.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 301ms (Views: 299.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Wildlife" for 89.101.116.120 at 2015-04-12 23:47:38 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Wildlife"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" = ?[0m  [["category", "Wildlife"]]
+  Rendered items/index.html.erb within layouts/application (18.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 260ms (Views: 257.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/images/dsc_0483" for 89.101.116.120 at 2015-04-12 23:47:38 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/dsc_0483"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (7.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (60.0ms)
+
+
+Started GET "/" for 89.101.116.120 at 2015-04-13 04:08:58 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 621ms (Views: 607.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mainpic.jpg" for 89.101.116.120 at 2015-04-13 04:08:59 +0000
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 04:09:02 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.6ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (43.8ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 438ms (Views: 426.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/items/new" for 89.101.116.120 at 2015-04-13 04:09:05 +0000
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (22.0ms)
+  Rendered items/new.html.erb within layouts/application (24.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 300ms (Views: 298.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/items" for 89.101.116.120 at 2015-04-13 04:10:03 +0000
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FzS+jhjlG47aPr9d+oRpd6y8dhagaVvyLRZ2sFCaRD2D2TDDc7Aa8mteyeZa8ayQe7Lcx+d/mcZX7i0VPU2IhA==", "item"=>{"title"=>"Banawe Rice Terraces", "description"=>"Famous rice terraces in Benguet, Philippines", "price"=>"FREE", "image_url"=>"banawe.jpg", "category"=>"Travel"}, "commit"=>"Create Item"}
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  INSERT INTO "items" ("title", "description", "price", "image_url", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["title", "Banawe Rice Terraces"], ["description", "Famous rice terraces in Benguet, Philippines"], ["price", 0.0], ["image_url", "banawe.jpg"], ["category", "Travel"], ["created_at", "2015-04-13 04:10:03.142307"], ["updated_at", "2015-04-13 04:10:03.142307"]]
+  [1m[36m (16.3ms)[0m  [1mcommit transaction[0m
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items/8
+Completed 302 Found in 43ms (ActiveRecord: 19.1ms)
+
+
+Started GET "/items/8" for 89.101.116.120 at 2015-04-13 04:10:03 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mItem Load (0.6ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered items/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 472ms (Views: 460.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 04:10:06 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" IS NULL[0m
+  Rendered items/index.html.erb within layouts/application (15.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 321ms (Views: 319.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Travel" for 89.101.116.120 at 2015-04-13 04:10:08 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Travel"}
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" = ?  [["category", "Travel"]]
+  Rendered items/index.html.erb within layouts/application (10.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 232ms (Views: 230.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/banawe-c9be5d453ea82a6305754939250b7e0d.jpg" for 89.101.116.120 at 2015-04-13 04:10:09 +0000
+
+
+Started GET "/items/new" for 89.101.116.120 at 2015-04-13 04:10:20 +0000
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (3.7ms)
+  Rendered items/new.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 239ms (Views: 237.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/items" for 89.101.116.120 at 2015-04-13 04:11:21 +0000
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7PlQvE3cRg2kdYyAXr91jVV/wbkotonDXI5VMjb/+uJ4FN7xJolHcRUV+jv+yrBqgnFraG+gS/cmdg6XWyg2Ww==", "item"=>{"title"=>"Boracay", "description"=>"White-sand beach in Aklan, Philippines", "price"=>"FREE", "image_url"=>"boracay.png", "category"=>"Travel"}, "commit"=>"Create Item"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "items" ("title", "description", "price", "image_url", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["title", "Boracay"], ["description", "White-sand beach in Aklan, Philippines"], ["price", 0.0], ["image_url", "boracay.png"], ["category", "Travel"], ["created_at", "2015-04-13 04:11:21.817296"], ["updated_at", "2015-04-13 04:11:21.817296"]]
+  [1m[36m (10.7ms)[0m  [1mcommit transaction[0m
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items/9
+Completed 302 Found in 19ms (ActiveRecord: 11.6ms)
+
+
+Started GET "/items/9" for 89.101.116.120 at 2015-04-13 04:11:23 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered items/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 227ms (Views: 225.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 04:11:33 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" IS NULL[0m
+  Rendered items/index.html.erb within layouts/application (14.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 233ms (Views: 231.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/new" for 89.101.116.120 at 2015-04-13 04:11:35 +0000
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (3.6ms)
+  Rendered items/new.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 226ms (Views: 224.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/items" for 89.101.116.120 at 2015-04-13 04:12:34 +0000
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cfCIIponIigEsRycbokWxaEpGmNrYqYGvK72eqPmMM3lHQZv8XIjVLXRaifO/NMidiewsix0ZDLGVq3fzjH8dA==", "item"=>{"title"=>"El Nido", "description"=>"Deep blue waters in Palawan, Philippines", "price"=>"FREE", "image_url"=>"", "category"=>"Travel"}, "commit"=>"Create Item"}
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "items" ("title", "description", "price", "image_url", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "El Nido"], ["description", "Deep blue waters in Palawan, Philippines"], ["price", 0.0], ["image_url", ""], ["category", "Travel"], ["created_at", "2015-04-13 04:12:34.613965"], ["updated_at", "2015-04-13 04:12:34.613965"]]
+  [1m[35m (10.5ms)[0m  commit transaction
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items/10
+Completed 302 Found in 22ms (ActiveRecord: 11.7ms)
+
+
+Started GET "/items/10" for 89.101.116.120 at 2015-04-13 04:12:34 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  Rendered items/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 487ms (Views: 484.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 04:12:46 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (1.5ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (16.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 333ms (Views: 330.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/items/new" for 89.101.116.120 at 2015-04-13 04:12:49 +0000
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (3.5ms)
+  Rendered items/new.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 274ms (Views: 272.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/items" for 89.101.116.120 at 2015-04-13 04:13:45 +0000
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4XHkCqh5XRzUsg6Gacf/a7xRqiU9+dKKzqKnzHNDU/d1nGpHwyxcYGXSeD3JsjqMa18A9HrvEL60WvxpHpSfTg==", "item"=>{"title"=>"HK boats", "description"=>"Peddlers in boats, Hong Kong", "price"=>"FREE", "image_url"=>"hkboats.jpg", "category"=>"Travel"}, "commit"=>"Create Item"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "items" ("title", "description", "price", "image_url", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["title", "HK boats"], ["description", "Peddlers in boats, Hong Kong"], ["price", 0.0], ["image_url", "hkboats.jpg"], ["category", "Travel"], ["created_at", "2015-04-13 04:13:45.593118"], ["updated_at", "2015-04-13 04:13:45.593118"]]
+  [1m[36m (15.9ms)[0m  [1mcommit transaction[0m
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items/11
+Completed 302 Found in 24ms (ActiveRecord: 16.8ms)
+
+
+Started GET "/items/11" for 89.101.116.120 at 2015-04-13 04:13:45 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered items/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 412ms (Views: 410.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 04:13:47 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" IS NULL[0m
+  Rendered items/index.html.erb within layouts/application (15.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 317ms (Views: 314.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 04:13:54 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.6ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (14.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 395ms (Views: 392.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 04:14:01 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.6ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" IS NULL[0m
+  Rendered items/index.html.erb within layouts/application (14.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 323ms (Views: 320.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contact" for 89.101.116.120 at 2015-04-13 04:14:06 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 442ms (Views: 440.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 04:14:08 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (13.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 354ms (Views: 352.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contact" for 89.101.116.120 at 2015-04-13 04:14:20 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 324ms (Views: 323.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 04:14:21 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" IS NULL[0m
+  Rendered items/index.html.erb within layouts/application (18.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 358ms (Views: 354.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/contact" for 89.101.116.120 at 2015-04-13 04:14:22 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 314ms (Views: 313.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 04:14:30 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 297ms (Views: 295.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contact" for 89.101.116.120 at 2015-04-13 04:14:31 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 296ms (Views: 295.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 04:14:33 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" IS NULL[0m
+  Rendered items/index.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 300ms (Views: 298.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Travel" for 89.101.116.120 at 2015-04-13 04:14:38 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Travel"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" = ?  [["category", "Travel"]]
+  Rendered items/index.html.erb within layouts/application (20.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 415ms (Views: 413.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/boracay-96e33e9fa3a731f6e23617b1e979a5a5.png" for 89.101.116.120 at 2015-04-13 04:14:38 +0000
+
+
+Started GET "/assets/hkboats-aabfe494cabfbca05f38881df8b29079.jpg" for 89.101.116.120 at 2015-04-13 04:14:38 +0000
+
+
+Started GET "/items/10" for 89.101.116.120 at 2015-04-13 04:15:12 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  Rendered items/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 278ms (Views: 275.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items/10/edit" for 89.101.116.120 at 2015-04-13 04:15:16 +0000
+Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  Rendered items/_form.html.erb (14.3ms)
+  Rendered items/edit.html.erb within layouts/application (17.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 309ms (Views: 307.2ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/items/10" for 89.101.116.120 at 2015-04-13 04:15:32 +0000
+Processing by ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rfVWDDOM70uNUgoZolCXXeUv9yhdttAzOH3cQ1pO1Ok5GNhBWNnuNzwyfKICJVK6MiFd+RqgEgdChYfmN5kYUA==", "item"=>{"title"=>"El Nido", "description"=>"Deep blue waters in Palawan, Philippines", "price"=>"0", "image_url"=>"elnido.jpg", "category"=>"Travel"}, "commit"=>"Update Item", "id"=>"10"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "items" SET "image_url" = ?, "updated_at" = ? WHERE "items"."id" = ?[0m  [["image_url", "elnido.jpg"], ["updated_at", "2015-04-13 04:15:32.752873"], ["id", 10]]
+  [1m[35m (12.7ms)[0m  commit transaction
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items/10
+Completed 302 Found in 22ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/items/10" for 89.101.116.120 at 2015-04-13 04:15:32 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  Rendered items/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 314ms (Views: 312.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 04:15:35 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 275ms (Views: 273.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Travel" for 89.101.116.120 at 2015-04-13 04:15:37 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Travel"}
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" = ?[0m  [["category", "Travel"]]
+  Rendered items/index.html.erb within layouts/application (10.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 304ms (Views: 301.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/elnido-fb65dc70083cce6f85029e5525370e1f.jpg" for 89.101.116.120 at 2015-04-13 04:15:38 +0000
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 04:16:07 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (1.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (18.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 339ms (Views: 335.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 89.101.116.120 at 2015-04-13 04:16:24 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 592ms (Views: 580.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mainpic.jpg" for 89.101.116.120 at 2015-04-13 04:16:25 +0000
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 04:16:27 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (45.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 414ms (Views: 403.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Wildlife" for 89.101.116.120 at 2015-04-13 04:16:33 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Wildlife"}
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" = ?[0m  [["category", "Wildlife"]]
+  Rendered items/index.html.erb within layouts/application (24.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 295ms (Views: 292.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/dsc_0483" for 89.101.116.120 at 2015-04-13 04:16:34 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/dsc_0483"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (13.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (78.0ms)
+
+
+Started GET "/items/7" for 89.101.116.120 at 2015-04-13 04:16:39 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered items/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 306ms (Views: 302.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 04:17:04 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" IS NULL[0m
+  Rendered items/index.html.erb within layouts/application (13.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 369ms (Views: 367.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/new" for 89.101.116.120 at 2015-04-13 04:17:09 +0000
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (13.3ms)
+  Rendered items/new.html.erb within layouts/application (16.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 270ms (Views: 269.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/items" for 89.101.116.120 at 2015-04-13 04:18:06 +0000
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qODC0/X+HYDGCl5RYLdk6JpGTlagDKDx+QdFugtv3j48DUyenqsc/HdqKOrAwqEPTUjkh+caYsWD/x4fZrgShw==", "item"=>{"title"=>"Japanese Lanterns", "description"=>"Famous lanterns in Japan", "price"=>"0", "image_url"=>"japlanterns", "category"=>"Travel"}, "commit"=>"Create Item"}
+  [1m[35m (0.8ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "items" ("title", "description", "price", "image_url", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Japanese Lanterns"], ["description", "Famous lanterns in Japan"], ["price", 0.0], ["image_url", "japlanterns"], ["category", "Travel"], ["created_at", "2015-04-13 04:18:06.249934"], ["updated_at", "2015-04-13 04:18:06.249934"]]
+  [1m[35m (16.0ms)[0m  commit transaction
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items/12
+Completed 302 Found in 33ms (ActiveRecord: 18.2ms)
+
+
+Started GET "/items/12" for 89.101.116.120 at 2015-04-13 04:18:06 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 12]]
+  Rendered items/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 408ms (Views: 406.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 04:18:08 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (19.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 323ms (Views: 320.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 04:18:13 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" IS NULL[0m
+  Rendered items/index.html.erb within layouts/application (20.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 480ms (Views: 477.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Travel" for 89.101.116.120 at 2015-04-13 04:18:16 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Travel"}
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" = ?  [["category", "Travel"]]
+  Rendered items/index.html.erb within layouts/application (32.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 371ms (Views: 368.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/japlanterns" for 89.101.116.120 at 2015-04-13 04:18:17 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/japlanterns"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (166.5ms)
+
+
+Started GET "/items/12" for 89.101.116.120 at 2015-04-13 04:18:22 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 12]]
+  Rendered items/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 325ms (Views: 321.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/12/edit" for 89.101.116.120 at 2015-04-13 04:18:24 +0000
+Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mItem Load (0.9ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 12]]
+  Rendered items/_form.html.erb (3.8ms)
+  Rendered items/edit.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 350ms (Views: 347.2ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/items/12" for 89.101.116.120 at 2015-04-13 04:18:30 +0000
+Processing by ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6GXYYnNiXZUPC6Q5VQPmebauWz2oYA3zmDhyX4bivUt8iFYvGDdc6b5r0oL1diOeYaDx7O92z8fiwCn66zVx8g==", "item"=>{"title"=>"Japanese Lanterns", "description"=>"Famous lanterns in Japan", "price"=>"0", "image_url"=>"japlanterns.jpg", "category"=>"Travel"}, "commit"=>"Update Item", "id"=>"12"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "items" SET "image_url" = ?, "updated_at" = ? WHERE "items"."id" = ?[0m  [["image_url", "japlanterns.jpg"], ["updated_at", "2015-04-13 04:18:30.388341"], ["id", 12]]
+  [1m[35m (12.2ms)[0m  commit transaction
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items/12
+Completed 302 Found in 24ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/items/12" for 89.101.116.120 at 2015-04-13 04:18:30 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 12]]
+  Rendered items/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 401ms (Views: 398.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 04:18:32 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (14.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 342ms (Views: 340.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Travel" for 89.101.116.120 at 2015-04-13 04:18:35 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Travel"}
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" = ?[0m  [["category", "Travel"]]
+  Rendered items/index.html.erb within layouts/application (20.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 440ms (Views: 438.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/japlanterns-272f6cbcc2f7fda14d803fa228e901d9.jpg" for 89.101.116.120 at 2015-04-13 04:18:35 +0000
+
+
+Started GET "/" for 89.101.116.120 at 2015-04-13 11:31:22 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 632ms (Views: 621.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mainpic.jpg" for 89.101.116.120 at 2015-04-13 11:31:23 +0000
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:31:25 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.7ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (71.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 411ms (Views: 397.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Wildlife" for 89.101.116.120 at 2015-04-13 11:31:31 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Wildlife"}
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" = ?[0m  [["category", "Wildlife"]]
+  Rendered items/index.html.erb within layouts/application (23.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 300ms (Views: 298.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/dsc_0483" for 89.101.116.120 at 2015-04-13 11:31:31 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/dsc_0483"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (11.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (124.4ms)
+
+
+Started GET "/items/7" for 89.101.116.120 at 2015-04-13 11:31:38 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mItem Load (0.4ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered items/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 344ms (Views: 338.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items/7/edit" for 89.101.116.120 at 2015-04-13 11:31:41 +0000
+Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered items/_form.html.erb (15.8ms)
+  Rendered items/edit.html.erb within layouts/application (20.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 347ms (Views: 345.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:32:02 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (1.3ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (18.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 419ms (Views: 414.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/cart" for 89.101.116.120 at 2015-04-13 11:33:33 +0000
+Processing by CartController#index as HTML
+  Rendered cart/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 328ms (Views: 326.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:34:37 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (1.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" IS NULL[0m
+  Rendered items/index.html.erb within layouts/application (22.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 343ms (Views: 338.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:34:42 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (14.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 345ms (Views: 343.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Travel" for 89.101.116.120 at 2015-04-13 11:34:46 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Travel"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" = ?[0m  [["category", "Travel"]]
+  Rendered items/index.html.erb within layouts/application (14.0ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 407ms (Views: 405.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items/8" for 89.101.116.120 at 2015-04-13 11:35:01 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered items/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 271ms (Views: 269.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items/9" for 89.101.116.120 at 2015-04-13 11:35:11 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered items/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 234ms (Views: 232.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:35:17 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 299ms (Views: 297.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items/1" for 89.101.116.120 at 2015-04-13 11:35:19 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 319ms (Views: 317.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 89.101.116.120 at 2015-04-13 11:35:41 +0000
+Processing by UserController#admin_login as HTML
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:35:41 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (20.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 355ms (Views: 352.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/logout" for 89.101.116.120 at 2015-04-13 11:35:47 +0000
+Processing by UserController#logout as HTML
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:35:47 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" IS NULL[0m
+  Rendered items/index.html.erb within layouts/application (14.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 289ms (Views: 286.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 89.101.116.120 at 2015-04-13 11:35:50 +0000
+Processing by UserController#admin_login as HTML
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:35:50 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (16.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 370ms (Views: 368.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:37:23 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (1.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" IS NULL[0m
+  Rendered items/index.html.erb within layouts/application (19.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 358ms (Views: 354.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/items/1" for 89.101.116.120 at 2015-04-13 11:37:42 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 383ms (Views: 359.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cart/1" for 89.101.116.120 at 2015-04-13 11:37:44 +0000
+Processing by CartController#add as HTML
+  Parameters: {"id"=>"1"}
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/cart
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/cart" for 89.101.116.120 at 2015-04-13 11:37:44 +0000
+Processing by CartController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered cart/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 330ms (Views: 327.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:37:52 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (1.4ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (20.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 375ms (Views: 370.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Travel" for 89.101.116.120 at 2015-04-13 11:37:57 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Travel"}
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" = ?  [["category", "Travel"]]
+  Rendered items/index.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 337ms (Views: 334.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items/10" for 89.101.116.120 at 2015-04-13 11:37:59 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  Rendered items/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 276ms (Views: 273.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cart/10" for 89.101.116.120 at 2015-04-13 11:38:01 +0000
+Processing by CartController#add as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/cart
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/cart" for 89.101.116.120 at 2015-04-13 11:38:01 +0000
+Processing by CartController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  Rendered cart/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 322ms (Views: 318.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:38:06 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mItem Load (1.3ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (21.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 472ms (Views: 464.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Travel" for 89.101.116.120 at 2015-04-13 11:38:10 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Travel"}
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" = ?[0m  [["category", "Travel"]]
+  Rendered items/index.html.erb within layouts/application (13.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 447ms (Views: 441.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items/11" for 89.101.116.120 at 2015-04-13 11:38:12 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered items/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 276ms (Views: 271.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/cart/11" for 89.101.116.120 at 2015-04-13 11:38:14 +0000
+Processing by CartController#add as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/cart
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/cart" for 89.101.116.120 at 2015-04-13 11:38:14 +0000
+Processing by CartController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "11"]]
+  Rendered cart/index.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 321ms (Views: 317.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cart" for 89.101.116.120 at 2015-04-13 11:38:17 +0000
+Processing by CartController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "11"]]
+  Rendered cart/index.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 315ms (Views: 311.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:38:29 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mItem Load (0.5ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (14.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 354ms (Views: 349.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Flowers" for 89.101.116.120 at 2015-04-13 11:38:34 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Flowers"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" = ?  [["category", "Flowers"]]
+  Rendered items/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 244ms (Views: 240.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/items/3" for 89.101.116.120 at 2015-04-13 11:38:38 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered items/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 313ms (Views: 308.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/cart/3" for 89.101.116.120 at 2015-04-13 11:38:42 +0000
+Processing by CartController#add as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/cart
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/cart" for 89.101.116.120 at 2015-04-13 11:38:42 +0000
+Processing by CartController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "11"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered cart/index.html.erb within layouts/application (12.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 425ms (Views: 420.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:39:00 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (13.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 314ms (Views: 310.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:39:09 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" IS NULL[0m
+  Rendered items/index.html.erb within layouts/application (25.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 302ms (Views: 296.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:41:25 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.6ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mItem Load (1.4ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (31.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 526ms (Views: 514.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Travel" for 89.101.116.120 at 2015-04-13 11:41:28 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Travel"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" = ?[0m  [["category", "Travel"]]
+  Rendered items/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 318ms (Views: 313.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items/10/edit" for 89.101.116.120 at 2015-04-13 11:41:33 +0000
+Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "10"]]
+  Rendered items/_form.html.erb (3.7ms)
+  Rendered items/edit.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 309ms (Views: 304.5ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/items/10" for 89.101.116.120 at 2015-04-13 11:41:53 +0000
+Processing by ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3zoEFL4KXiy03NY1gNhsUAs1jMb8VkqaSUBBREt014zzsVFerIcIaGmwRg/8w2AsqZ449vrerZ/Eky07o9LlLw==", "item"=>{"title"=>"El Nido 600x450px 96dpi", "description"=>"Deep blue waters in Palawan, Philippines", "price"=>"0", "image_url"=>"elnido.jpg", "category"=>"Travel"}, "commit"=>"Update Item", "id"=>"10"}
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "items" SET "title" = ?, "updated_at" = ? WHERE "items"."id" = ?[0m  [["title", "El Nido 600x450px 96dpi"], ["updated_at", "2015-04-13 11:41:53.304908"], ["id", 10]]
+  [1m[35m (11.3ms)[0m  commit transaction
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items/10
+Completed 302 Found in 28ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/items/10" for 89.101.116.120 at 2015-04-13 11:41:53 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  Rendered items/show.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 349ms (Views: 343.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:41:55 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mItem Load (1.5ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+  Rendered items/index.html.erb within layouts/application (18.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 402ms (Views: 396.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Travel" for 89.101.116.120 at 2015-04-13 11:41:58 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Travel"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" = ?[0m  [["category", "Travel"]]
+  Rendered items/index.html.erb within layouts/application (10.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 341ms (Views: 335.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Flowers" for 89.101.116.120 at 2015-04-13 11:42:08 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Flowers"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" = ?  [["category", "Flowers"]]
+  Rendered items/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 360ms (Views: 355.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:42:16 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" IS NULL[0m
+  Rendered items/index.html.erb within layouts/application (14.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 403ms (Views: 397.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Travel" for 89.101.116.120 at 2015-04-13 11:42:19 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Travel"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" = ?  [["category", "Travel"]]
+  Rendered items/index.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 361ms (Views: 355.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/items/10/edit" for 89.101.116.120 at 2015-04-13 11:42:21 +0000
+Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  Rendered items/_form.html.erb (4.1ms)
+  Rendered items/edit.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 342ms (Views: 336.9ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/items/10" for 89.101.116.120 at 2015-04-13 11:42:43 +0000
+Processing by ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CVrQbdXqp94QFp0QcplXtFDucJEsHanDQIYK0MWr7aEl0YUnx2fxms16DSoOglvI8kXEoSqVTsbNVWavLQ3fAg==", "item"=>{"title"=>"El Nido 600 x 450px @96dpi", "description"=>"Deep blue waters in Palawan, Philippines", "price"=>"0", "image_url"=>"elnido.jpg", "category"=>"Travel"}, "commit"=>"Update Item", "id"=>"10"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "10"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "items" SET "title" = ?, "updated_at" = ? WHERE "items"."id" = ?  [["title", "El Nido 600 x 450px @96dpi"], ["updated_at", "2015-04-13 11:42:43.437235"], ["id", 10]]
+  [1m[36m (15.0ms)[0m  [1mcommit transaction[0m
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items/10
+Completed 302 Found in 23ms (ActiveRecord: 16.1ms)
+
+
+Started GET "/items/10" for 89.101.116.120 at 2015-04-13 11:42:43 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "10"]]
+  Rendered items/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 317ms (Views: 311.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:42:45 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" IS NULL[0m
+  Rendered items/index.html.erb within layouts/application (15.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 343ms (Views: 338.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Travel" for 89.101.116.120 at 2015-04-13 11:42:57 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Travel"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" = ?  [["category", "Travel"]]
+  Rendered items/index.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 321ms (Views: 318.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:43:01 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" IS NULL[0m
+  Rendered items/index.html.erb within layouts/application (15.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 362ms (Views: 358.0ms | ActiveRecord: 1.0ms)
+  [1m[36mItem Load (6.4ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "items"
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:45:48 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "items" WHERE "items"."category" IS NULL
+  [1m[36mItem Load (0.8ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" IS NULL[0m
+  Rendered items/index.html.erb within layouts/application (28.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 966ms (Views: 863.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:46:20 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" IS NULL
+Completed 500 Internal Server Error in 29ms
+
+NameError (undefined local variable or method `xxxxxxxxxxxxxxxx' for #<ItemsController:0x007f317a7c5788>):
+  app/controllers/items_controller.rb:12:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (170.0ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:46:21 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" IS NULL[0m
+Completed 500 Internal Server Error in 13ms
+
+NameError (undefined local variable or method `xxxxxxxxxxxxxxxx' for #<ItemsController:0x007f317949c8a0>):
+  app/controllers/items_controller.rb:12:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (11.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (138.4ms)
+
+
+Started GET "/" for 89.101.116.120 at 2015-04-13 11:47:49 +0000
+Processing by SiteController#about as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered site/about.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 566ms (Views: 540.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/mainpic.jpg" for 89.101.116.120 at 2015-04-13 11:47:50 +0000
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:47:51 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mItem Load (0.5ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (212.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 877ms (Views: 871.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/images/dsc_0483" for 89.101.116.120 at 2015-04-13 11:47:52 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/dsc_0483"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (59.9ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:55:15 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (56.6ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 511ms (Views: 501.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/images/dsc_0483" for 89.101.116.120 at 2015-04-13 11:55:16 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/dsc_0483"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (64.9ms)
+
+
+Started DELETE "/items/7" for 89.101.116.120 at 2015-04-13 11:55:30 +0000
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"v6gYuB/FJ/V61hdDk8F97yNoYORDnaEZetGGk4QmCsmTI03yDUhxsae6h3nv2nGTgcPU1EUVRhz3AursbIA4ag==", "id"=>"7"}
+  [1m[35mItem Load (0.4ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "items" WHERE "items"."id" = ?  [["id", 7]]
+  [1m[36m (11.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items
+Completed 302 Found in 20ms (ActiveRecord: 12.6ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:55:30 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (23.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 438ms (Views: 434.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 11:55:46 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (40.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 661ms (Views: 650.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 12:01:55 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.7ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mItem Load (1.5ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (50.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 801ms (Views: 788.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/contact" for 89.101.116.120 at 2015-04-13 12:02:03 +0000
+Processing by SiteController#contact as HTML
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered site/contact.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 595ms (Views: 586.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 12:04:02 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.6ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (1.1ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (32.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 388ms (Views: 378.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 12:04:07 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (27.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 379ms (Views: 373.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 12:04:10 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (22.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 421ms (Views: 415.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 12:04:18 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mItem Load (0.4ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (24.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 424ms (Views: 417.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/cart" for 89.101.116.120 at 2015-04-13 12:04:28 +0000
+Processing by CartController#index as HTML
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "10"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "11"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered cart/index.html.erb within layouts/application (14.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 369ms (Views: 364.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin" for 89.101.116.120 at 2015-04-13 12:04:37 +0000
+Processing by UserController#admin_login as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 3]]
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 12:04:37 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.6ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (23.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 475ms (Views: 473.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 12:04:43 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.6ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (29.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 432ms (Views: 429.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 89.101.116.120 at 2015-04-13 12:11:34 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 639ms (Views: 627.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mainpic.jpg" for 89.101.116.120 at 2015-04-13 12:11:35 +0000
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 12:11:37 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (58.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 458ms (Views: 453.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 12:11:56 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (2.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (28.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 346ms (Views: 341.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/items" for 89.101.116.120 at 2015-04-13 12:12:06 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (22.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 525ms (Views: 523.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contact" for 89.101.116.120 at 2015-04-13 12:12:12 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 321ms (Views: 320.4ms | ActiveRecord: 0.0ms)

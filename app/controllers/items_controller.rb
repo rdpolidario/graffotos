@@ -4,7 +4,7 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
-    if params[:category] == ''
+    if params[:category].blank?
       @items = Item.all
     else
       @items = Item.where(category: params[:category])
