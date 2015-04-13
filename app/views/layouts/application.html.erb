@@ -22,28 +22,15 @@
       </nav>
     </div>
   </header>
+   
+  <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p> 
     
   <div id='container'>
     <div id='content'>
   		<%= yield %>
     </div>
-    <!--<div id='first-column'>
-    	<div class="searchbox">
-    		<h2 class="BoxHeaders">Search</h2>
-    		<input type="text" name="search" /><input type="submit" value="Search" />
-    	</div>
-      <div class="box">
-        <h2 class="BoxHeaders">Special Offers</h2>
-        <img src="/assets/Books/Pict1.jpg" name="Rotating" id="Rotating1" alt="Special Offers	">
-    		<script type="text/javascript">
-    			RotateImages(1,0);
-    		</script>
-    	</div>
-    	<div class="box">
-    		<h2 class="BoxHeaders">Newly Published</h2>
-    		<img src="/assets/Books/Pict1.jpg" alt="New Books">
-    	</div>
-    </div>-->
+    
   </div>
   <%= render 'layouts/footer' %>
 </body>

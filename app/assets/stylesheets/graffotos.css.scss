@@ -1,7 +1,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
 /* mixins, variables, etc. */
+
 
 $gray:#333333;
 $gray-medium-light: #eaeaea;
@@ -11,7 +13,9 @@ $orange:#FF9966;
 $pink:#CC6666;
 $pink2:#FBCDB7;
 
+
 /* universal */
+
 
 body {
   padding-top: 60px;
@@ -27,9 +31,11 @@ section {
   overflow: auto;
 }
 
+
 textarea {
   resize: vertical;
 }
+
 
 .center {
   text-align: center;
@@ -38,11 +44,14 @@ textarea {
   }
 }
 
+
 /* typography */
+
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
+
 
 h1 {
   color:#999999;
@@ -51,6 +60,7 @@ h1 {
   margin-bottom: 30px;
   text-align: center;
 }
+
 
 h2 {
   font-size: 1.2em;
@@ -61,16 +71,19 @@ h2 {
   color: $gray-light;
 }
 
+
 p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
 
 
+
 /* header */
 #header{
   background:$gray;
 }
+
 
 #logo {
   float: left;
@@ -87,11 +100,13 @@ p {
   }
 }
 
+
 /*main picture*/
 #pic1 {
  background-image: url("mainpic.jpg"); 
  height:480px;
 }
+
 
 
 /* content */
@@ -104,6 +119,7 @@ p {
   margin: auto;
 }
 
+
 #content {
 	left: 0;
     margin: 0px;
@@ -111,6 +127,7 @@ p {
     border: 0px solid gray;
     width: auto;
 }
+
 
 /* items */
 .itemstyle {
@@ -145,7 +162,9 @@ p {
   background:$orange;
 }
 
+
 /* footer */
+
 
 #footer {
   clear:left;
@@ -153,12 +172,21 @@ p {
   padding-top: 10px;
   border-top: 1px solid $gray-medium-light;
   color: $gray;
+  padding:20px;
+  margin:auto;
+
+
   a {
-    color: red;
+    color: $gray;
     &:hover {
       color: $blue;
     }
-  }
+  }  
+  p {
+    clear:left;
+    padding-top:15px;
+    }
+  
   small {
     float: left;
   }

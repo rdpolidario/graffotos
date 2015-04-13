@@ -48,5 +48,12 @@ group :development, :test do
 # NOTE: The sass-rails gem is included with new Rails applications by default.
 #       Please make sure that it is not already in your Gemfile before uncommenting it.
 # gem 'sass-rails'
+ gem 'devise'
+
+group :production do
+  gem 'pg',             '0.17.1'
+  gem 'rails_12factor', '0.0.2'
+end
+
 end
 

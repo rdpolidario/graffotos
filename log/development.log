@@ -17970,3 +17970,2618 @@ Processing by SiteController#contact as HTML
   Rendered layouts/_shim.html.erb (0.1ms)
   Rendered layouts/_footer.html.erb (0.1ms)
 Completed 200 OK in 321ms (Views: 320.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 193.1.209.100 at 2015-04-13 15:49:46 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 781ms (Views: 705.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mainpic.jpg" for 193.1.209.100 at 2015-04-13 15:49:48 +0000
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 15:49:50 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.6ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (67.5ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 556ms (Views: 549.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 193.1.209.100 at 2015-04-13 15:50:05 +0000
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 304ms (Views: 302.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mainpic.jpg" for 193.1.209.100 at 2015-04-13 15:50:06 +0000
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 15:50:09 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (22.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 385ms (Views: 381.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 15:50:19 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.6ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (21.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 358ms (Views: 354.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Travel" for 193.1.209.100 at 2015-04-13 15:50:25 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Travel"}
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" = ?[0m  [["category", "Travel"]]
+  Rendered items/index.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 319ms (Views: 305.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Flowers" for 193.1.209.100 at 2015-04-13 15:50:32 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Flowers"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" = ?  [["category", "Flowers"]]
+  Rendered items/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 445ms (Views: 443.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Landscapes" for 193.1.209.100 at 2015-04-13 15:50:35 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Landscapes"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" = ?[0m  [["category", "Landscapes"]]
+  Rendered items/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 220ms (Views: 218.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Wildlife" for 193.1.209.100 at 2015-04-13 15:50:38 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Wildlife"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" = ?  [["category", "Wildlife"]]
+  Rendered items/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 241ms (Views: 239.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Travel" for 193.1.209.100 at 2015-04-13 15:50:41 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Travel"}
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" = ?[0m  [["category", "Travel"]]
+  Rendered items/index.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 613ms (Views: 611.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 15:50:46 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (33.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 346ms (Views: 344.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items/new" for 193.1.209.100 at 2015-04-13 15:51:05 +0000
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (31.3ms)
+  Rendered items/new.html.erb within layouts/application (36.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 420ms (Views: 418.4ms | ActiveRecord: 0.0ms)
+  [1m[36mItem Load (6.6ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "items"
+
+
+Started GET "/items/1" for 193.1.209.100 at 2015-04-13 16:29:58 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (1.4ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 410ms (Views: 388.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 193.1.209.100 at 2015-04-13 16:30:11 +0000
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 444ms (Views: 443.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mainpic.jpg" for 193.1.209.100 at 2015-04-13 16:30:12 +0000
+
+
+Started GET "/" for 193.1.209.100 at 2015-04-13 16:30:20 +0000
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 495ms (Views: 491.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mainpic.jpg" for 193.1.209.100 at 2015-04-13 16:30:20 +0000
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 16:30:22 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.6ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (37.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 454ms (Views: 451.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/items/1" for 193.1.209.100 at 2015-04-13 16:30:23 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered items/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 338ms (Views: 335.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 193.1.209.100 at 2015-04-13 16:30:25 +0000
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 340ms (Views: 338.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mainpic.jpg" for 193.1.209.100 at 2015-04-13 16:30:26 +0000
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 16:40:59 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (1.6ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (29.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 475ms (Views: 470.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 16:41:24 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (19.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 320ms (Views: 318.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 16:42:05 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (1.1ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (31.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 429ms (Views: 426.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 16:42:21 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.6ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (25.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 486ms (Views: 483.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 193.1.209.100 at 2015-04-13 16:52:34 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 702ms (Views: 690.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mainpic.jpg" for 193.1.209.100 at 2015-04-13 16:52:35 +0000
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 16:53:03 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (54.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 442ms (Views: 438.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/contact" for 193.1.209.100 at 2015-04-13 16:53:05 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 273ms (Views: 271.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 16:53:07 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (20.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 342ms (Views: 340.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 16:53:24 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (20.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 365ms (Views: 363.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 193.1.209.100 at 2015-04-13 16:53:52 +0000
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 359ms (Views: 357.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mainpic.jpg" for 193.1.209.100 at 2015-04-13 16:53:53 +0000
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 16:54:17 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (1.1ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (24.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 354ms (Views: 350.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 193.1.209.100 at 2015-04-13 16:54:45 +0000
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 342ms (Views: 340.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mainpic.jpg" for 193.1.209.100 at 2015-04-13 16:54:46 +0000
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 16:54:49 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (19.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 406ms (Views: 404.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 193.1.209.100 at 2015-04-13 16:55:18 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 643ms (Views: 631.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mainpic.jpg" for 193.1.209.100 at 2015-04-13 16:55:19 +0000
+
+
+Started GET "/" for 193.1.209.100 at 2015-04-13 16:55:24 +0000
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 309ms (Views: 308.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mainpic.jpg" for 193.1.209.100 at 2015-04-13 16:55:24 +0000
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 16:55:26 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (91.2ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 357ms (Views: 353.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/contact" for 193.1.209.100 at 2015-04-13 16:57:11 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 502ms (Views: 498.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 193.1.209.100 at 2015-04-13 16:57:13 +0000
+Processing by UserController#admin_login as HTML
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 16:57:13 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (1.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (33.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 355ms (Views: 351.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/contact" for 193.1.209.100 at 2015-04-13 16:57:15 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 503ms (Views: 501.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 193.1.209.100 at 2015-04-13 16:57:17 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 231ms (Views: 230.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 193.1.209.100 at 2015-04-13 16:57:22 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 325ms (Views: 324.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 16:57:23 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (22.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 311ms (Views: 310.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contact" for 193.1.209.100 at 2015-04-13 16:57:25 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 305ms (Views: 304.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Travel" for 193.1.209.100 at 2015-04-13 17:04:01 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Travel"}
+  [1m[36mItem Load (1.9ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" = ?[0m  [["category", "Travel"]]
+  Rendered items/index.html.erb within layouts/application (24.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1622ms (Views: 1602.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application-fd31b39228e94ba6a6ea75a0d7cd4d2a.css?body=1" for 193.1.209.100 at 2015-04-13 17:04:02 +0000
+
+
+Started GET "/items/11" for 193.1.209.100 at 2015-04-13 17:04:17 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mItem Load (0.5ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered items/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 297ms (Views: 283.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 193.1.209.100 at 2015-04-13 17:06:09 +0000
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 6349ms (Views: 6345.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 193.1.209.100 at 2015-04-13 17:06:15 +0000
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 362ms (Views: 361.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:06:15 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (2.1ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (32.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 309ms (Views: 306.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:06:16 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (25.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 261ms (Views: 259.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:06:16 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (28.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 338ms (Views: 337.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:06:17 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:06:17 +0000
+
+
+Started GET "/contact" for 193.1.209.100 at 2015-04-13 17:06:19 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 256ms (Views: 255.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 193.1.209.100 at 2015-04-13 17:06:21 +0000
+Processing by UserController#admin_login as HTML
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:06:21 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.7ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (33.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 374ms (Views: 372.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/contact" for 193.1.209.100 at 2015-04-13 17:06:22 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 288ms (Views: 287.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 193.1.209.100 at 2015-04-13 17:07:33 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 656ms (Views: 644.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mainpic.jpg" for 193.1.209.100 at 2015-04-13 17:07:35 +0000
+
+
+Started GET "/" for 193.1.209.100 at 2015-04-13 17:07:40 +0000
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 333ms (Views: 331.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mainpic.jpg" for 193.1.209.100 at 2015-04-13 17:07:40 +0000
+
+
+Started GET "/contact" for 193.1.209.100 at 2015-04-13 17:07:42 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 229ms (Views: 227.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:07:44 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (71.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 316ms (Views: 312.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/contact" for 193.1.209.100 at 2015-04-13 17:07:45 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 247ms (Views: 246.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 193.1.209.100 at 2015-04-13 17:07:48 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 250ms (Views: 248.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 193.1.209.100 at 2015-04-13 17:07:50 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 283ms (Views: 281.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:07:52 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (1.6ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (35.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 345ms (Views: 341.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/contact" for 193.1.209.100 at 2015-04-13 17:07:54 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 283ms (Views: 282.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 193.1.209.100 at 2015-04-13 17:07:55 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 381ms (Views: 379.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:07:57 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (1.5ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (30.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 367ms (Views: 364.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/contact" for 193.1.209.100 at 2015-04-13 17:07:58 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 298ms (Views: 296.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 193.1.209.100 at 2015-04-13 17:07:59 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 176ms (Views: 175.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:08:44 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.6ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (29.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 319ms (Views: 314.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contact" for 193.1.209.100 at 2015-04-13 17:08:45 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 282ms (Views: 280.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:08:55 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.5ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (26.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 313ms (Views: 311.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/contact" for 193.1.209.100 at 2015-04-13 17:08:56 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 191ms (Views: 190.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:09:00 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (30.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 353ms (Views: 351.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 193.1.209.100 at 2015-04-13 17:13:06 +0000
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 285ms (Views: 282.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mainpic.jpg" for 193.1.209.100 at 2015-04-13 17:13:07 +0000
+
+
+Started GET "/contact" for 193.1.209.100 at 2015-04-13 17:13:09 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 319ms (Views: 317.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:13:51 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (1.4ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (33.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 419ms (Views: 415.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/contact" for 193.1.209.100 at 2015-04-13 17:14:06 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 286ms (Views: 284.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:06 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:06 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:06 +0000
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:06 +0000
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:06 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:06 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:06 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:07 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:07 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:07 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:07 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:07 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:07 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:07 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:07 +0000
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:14:13 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (1.9ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (27.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 279ms (Views: 275.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/contact" for 193.1.209.100 at 2015-04-13 17:14:16 +0000
+Processing by SiteController#contact as HTML
+  Rendered site/contact.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 203ms (Views: 202.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:14:18 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.7ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (27.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 302ms (Views: 299.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Travel" for 193.1.209.100 at 2015-04-13 17:14:20 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Travel"}
+  [1m[36mItem Load (0.7ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" = ?[0m  [["category", "Travel"]]
+  Rendered items/index.html.erb within layouts/application (20.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 296ms (Views: 279.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:20 +0000
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:20 +0000
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:20 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:20 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:20 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:20 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:21 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:21 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:21 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:21 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:21 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:21 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:21 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:21 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:21 +0000
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Wildlife" for 193.1.209.100 at 2015-04-13 17:14:23 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Wildlife"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" = ?  [["category", "Wildlife"]]
+  Rendered items/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 250ms (Views: 248.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:23 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:23 +0000
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:23 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:23 +0000
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:23 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:23 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:23 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:23 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:23 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:23 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:23 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:23 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:23 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:23 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:24 +0000
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Flowers" for 193.1.209.100 at 2015-04-13 17:14:27 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Flowers"}
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" = ?[0m  [["category", "Flowers"]]
+  Rendered items/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 185ms (Views: 183.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:27 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:27 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:27 +0000
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:27 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:27 +0000
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:27 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:14:28 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:28 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:28 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:28 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:28 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:28 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:28 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:28 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:14:28 +0000
+
+
+Started GET "/" for 193.1.209.100 at 2015-04-13 17:19:59 +0000
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 296ms (Views: 292.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:20:00 +0000
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:20:00 +0000
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:20:00 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 17:20:00 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:20:00 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:20:00 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:20:00 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:00 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:00 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:00 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:00 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:00 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:00 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:00 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:00 +0000
+
+
+Started GET "/assets/mainpic.jpg" for 193.1.209.100 at 2015-04-13 17:20:00 +0000
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:20:25 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (1.7ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (43.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 375ms (Views: 370.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/items/new" for 193.1.209.100 at 2015-04-13 17:20:28 +0000
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (33.2ms)
+  Rendered items/new.html.erb within layouts/application (38.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 271ms (Views: 269.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/items" for 193.1.209.100 at 2015-04-13 17:20:45 +0000
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3amQTmdToxVEMII8rN/S5UkfaZN97+Q8cVbkTZ+yYMwfLItZQ8FP7mcv89wXuwDKRwRhIA1WrfC6Q7sL7VEYTw==", "item"=>{"title"=>"The Rose", "description"=>"", "price"=>"", "image_url"=>"rose1", "category"=>"Flowers"}, "commit"=>"Create Item"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "items" ("title", "description", "image_url", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["title", "The Rose"], ["description", ""], ["image_url", "rose1"], ["category", "Flowers"], ["created_at", "2015-04-13 17:20:45.193034"], ["updated_at", "2015-04-13 17:20:45.193034"]]
+  [1m[36m (19.3ms)[0m  [1mcommit transaction[0m
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items/13
+Completed 302 Found in 27ms (ActiveRecord: 20.1ms)
+
+
+Started GET "/items/13" for 193.1.209.100 at 2015-04-13 17:20:45 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mItem Load (0.4ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 13]]
+  Rendered items/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 208ms (Views: 200.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:20:45 +0000
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:20:45 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:20:45 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:20:45 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 17:20:45 +0000
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:20:45 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:20:45 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:45 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:45 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:45 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:45 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:45 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:45 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:46 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:46 +0000
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:20:47 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (53.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 349ms (Views: 347.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/rose1" for 193.1.209.100 at 2015-04-13 17:20:48 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/rose1"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (6.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (170.9ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Flowers" for 193.1.209.100 at 2015-04-13 17:20:51 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Flowers"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" = ?  [["category", "Flowers"]]
+  Rendered items/index.html.erb within layouts/application (23.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 310ms (Views: 308.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:20:51 +0000
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:20:51 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:20:51 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 17:20:51 +0000
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:20:51 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:20:51 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:20:51 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:51 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:51 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:51 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:51 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:51 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:51 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:51 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:20:51 +0000
+
+
+Started GET "/images/rose1" for 193.1.209.100 at 2015-04-13 17:20:52 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/rose1"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (66.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (160.7ms)
+
+
+Started GET "/items/13" for 193.1.209.100 at 2015-04-13 17:21:04 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 13]]
+  Rendered items/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 195ms (Views: 192.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items/13/edit" for 193.1.209.100 at 2015-04-13 17:21:06 +0000
+Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 13]]
+  Rendered items/_form.html.erb (4.0ms)
+  Rendered items/edit.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 234ms (Views: 232.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items/13" for 193.1.209.100 at 2015-04-13 17:21:23 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 13]]
+  Rendered items/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 208ms (Views: 205.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:21:30 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (38.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 220ms (Views: 218.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/rose1" for 193.1.209.100 at 2015-04-13 17:21:31 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/rose1"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (57.0ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Flowers" for 193.1.209.100 at 2015-04-13 17:21:33 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Flowers"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" = ?[0m  [["category", "Flowers"]]
+  Rendered items/index.html.erb within layouts/application (20.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 205ms (Views: 203.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:21:34 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 17:21:34 +0000
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:21:34 +0000
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:21:34 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:21:34 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:21:34 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:21:34 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:34 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:34 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:34 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:34 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:34 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:34 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:34 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:34 +0000
+
+
+Started GET "/images/rose1" for 193.1.209.100 at 2015-04-13 17:21:34 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/rose1"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.5@rails4/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (54.6ms)
+
+
+Started GET "/items/13/edit" for 193.1.209.100 at 2015-04-13 17:21:38 +0000
+Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 13]]
+  Rendered items/_form.html.erb (4.2ms)
+  Rendered items/edit.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 277ms (Views: 275.7ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/items/13" for 193.1.209.100 at 2015-04-13 17:21:45 +0000
+Processing by ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wwciqMCeloYOYVKIW6oe074koVIaOeUb31gZI3c+rBQBgjm/5Ax6fS1+I2jgzsz8sD+p4WqArNcUTUZlBd3Ulw==", "item"=>{"title"=>"The Rose", "description"=>"", "price"=>"", "image_url"=>"rose1.jpg", "category"=>"Flowers"}, "commit"=>"Update Item", "id"=>"13"}
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 13]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "items" SET "image_url" = ?, "updated_at" = ? WHERE "items"."id" = ?[0m  [["image_url", "rose1.jpg"], ["updated_at", "2015-04-13 17:21:45.350377"], ["id", 13]]
+  [1m[35m (17.1ms)[0m  commit transaction
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items/13
+Completed 302 Found in 33ms (ActiveRecord: 18.2ms)
+
+
+Started GET "/items/13" for 193.1.209.100 at 2015-04-13 17:21:45 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 13]]
+  Rendered items/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 281ms (Views: 278.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:21:45 +0000
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:21:45 +0000
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:21:45 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 17:21:45 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:21:45 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:21:45 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:21:45 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:45 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:45 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:45 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:45 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:45 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:45 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:45 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:45 +0000
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:21:47 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (38.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 415ms (Views: 414.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/rose1-35de6ebc116794b2fb5549a607843285.jpg" for 193.1.209.100 at 2015-04-13 17:21:47 +0000
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Flowers" for 193.1.209.100 at 2015-04-13 17:21:51 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Flowers"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" = ?[0m  [["category", "Flowers"]]
+  Rendered items/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 264ms (Views: 262.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:21:51 +0000
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:21:51 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:21:51 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 17:21:51 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:21:51 +0000
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:21:51 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:21:51 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:51 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:51 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:51 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:51 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:51 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:51 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:51 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 17:21:51 +0000
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:27:37 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.9ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (32.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 290ms (Views: 286.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/items/new" for 193.1.209.100 at 2015-04-13 17:33:56 +0000
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (8.7ms)
+  Rendered items/new.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 356ms (Views: 350.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/items" for 193.1.209.100 at 2015-04-13 17:34:58 +0000
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K0wZa2QDj0ATvbI/YbfoYRwslald0FOyk4EUUxi4xrrpyQJ8QJFjuzCiw9/a0zpOEjedGi1pGn5YlEsValu+OQ==", "item"=>{"title"=>"Great Wall", "description"=>"Great Wall of China 1152 x 864 @72dpi", "price"=>"FREE", "image_url"=>"greatwall.jpg", "category"=>"Travel"}, "commit"=>"Create Item"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "items" ("title", "description", "price", "image_url", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["title", "Great Wall"], ["description", "Great Wall of China 1152 x 864 @72dpi"], ["price", 0.0], ["image_url", "greatwall.jpg"], ["category", "Travel"], ["created_at", "2015-04-13 17:34:58.995319"], ["updated_at", "2015-04-13 17:34:58.995319"]]
+  [1m[36m (11.9ms)[0m  [1mcommit transaction[0m
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items/14
+Completed 302 Found in 22ms (ActiveRecord: 12.9ms)
+
+
+Started GET "/items/14" for 193.1.209.100 at 2015-04-13 17:34:59 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 14]]
+  Rendered items/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 258ms (Views: 255.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:34:59 +0000
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:34:59 +0000
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:34:59 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:34:59 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 17:34:59 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 17:34:59 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:34:59 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:34:59 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 17:34:59 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 17:34:59 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:34:59 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:34:59 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:34:59 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:34:59 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 17:34:59 +0000
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:36:07 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.9ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (42.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 335ms (Views: 331.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/greatwall-8ef8f0786dcd7c32ddfeea7659446557.jpg" for 193.1.209.100 at 2015-04-13 17:36:08 +0000
+
+
+Started GET "/items/new" for 193.1.209.100 at 2015-04-13 17:36:08 +0000
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (4.6ms)
+  Rendered items/new.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 211ms (Views: 209.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/items" for 193.1.209.100 at 2015-04-13 17:37:01 +0000
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bRynYVJxD2+aQpHdNLsrM5gLFf0X0H1rqNLobLyifUyvmbx2duPjlLld4D2P3/kclhAdTmdpNKdjx7cqzkEFzw==", "item"=>{"title"=>"Flamingos", "description"=>"Pink Flamingos 1754 x 2411px @240dpi", "price"=>"FREE", "image_url"=>"flamingos.jpg", "category"=>"Wildlife"}, "commit"=>"Create Item"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "items" ("title", "description", "price", "image_url", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Flamingos"], ["description", "Pink Flamingos 1754 x 2411px @240dpi"], ["price", 0.0], ["image_url", "flamingos.jpg"], ["category", "Wildlife"], ["created_at", "2015-04-13 17:37:01.134885"], ["updated_at", "2015-04-13 17:37:01.134885"]]
+  [1m[35m (18.6ms)[0m  commit transaction
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items/15
+Completed 302 Found in 26ms (ActiveRecord: 19.3ms)
+
+
+Started GET "/items/15" for 193.1.209.100 at 2015-04-13 17:37:01 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 15]]
+  Rendered items/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 251ms (Views: 249.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:01 +0000
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:01 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:01 +0000
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:01 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:01 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:01 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:01 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:01 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:01 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:01 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:01 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:01 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:01 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:01 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:01 +0000
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:37:03 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (34.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 284ms (Views: 282.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/flamingos-70ead0ad92b199d3de2db1284f416d2a.jpg" for 193.1.209.100 at 2015-04-13 17:37:03 +0000
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Wildlife" for 193.1.209.100 at 2015-04-13 17:37:06 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Wildlife"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" = ?[0m  [["category", "Wildlife"]]
+  Rendered items/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 164ms (Views: 162.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:06 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:06 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:06 +0000
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:06 +0000
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:06 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:06 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:06 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:06 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:06 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:06 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:06 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:06 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:06 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:06 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:06 +0000
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Travel" for 193.1.209.100 at 2015-04-13 17:37:15 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Travel"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" = ?  [["category", "Travel"]]
+  Rendered items/index.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 214ms (Views: 212.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:15 +0000
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:15 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:15 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:15 +0000
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:15 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:15 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:15 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:15 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:15 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:15 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:15 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:15 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:15 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:15 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:15 +0000
+
+
+Started GET "/items/14/edit" for 193.1.209.100 at 2015-04-13 17:37:21 +0000
+Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 14]]
+  Rendered items/_form.html.erb (3.4ms)
+  Rendered items/edit.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 200ms (Views: 198.3ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/items/14" for 193.1.209.100 at 2015-04-13 17:37:28 +0000
+Processing by ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OkSu2wRhx3/SN3GDRBFAVD8QVGZgJLcQT9d+x1d3Qsb4wbXMIPMrhPEoAGP/dZJ7MQtc1RCd/tyEwiGBJZQ6RQ==", "item"=>{"title"=>"Great Wall", "description"=>"Great Wall of China 1152 x 864px @72dpi", "price"=>"0", "image_url"=>"greatwall.jpg", "category"=>"Travel"}, "commit"=>"Update Item", "id"=>"14"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "items" SET "description" = ?, "updated_at" = ? WHERE "items"."id" = ?  [["description", "Great Wall of China 1152 x 864px @72dpi"], ["updated_at", "2015-04-13 17:37:28.557545"], ["id", 14]]
+  [1m[36m (10.7ms)[0m  [1mcommit transaction[0m
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items/14
+Completed 302 Found in 18ms (ActiveRecord: 11.6ms)
+
+
+Started GET "/items/14" for 193.1.209.100 at 2015-04-13 17:37:28 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 14]]
+  Rendered items/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 171ms (Views: 169.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:28 +0000
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:28 +0000
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:28 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:28 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:28 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:28 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:37:28 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:28 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:28 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:28 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:28 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:28 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:28 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:29 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 17:37:29 +0000
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:37:31 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (25.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 253ms (Views: 251.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/new" for 193.1.209.100 at 2015-04-13 17:39:08 +0000
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (7.2ms)
+  Rendered items/new.html.erb within layouts/application (11.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 370ms (Views: 364.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:40:04 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (1.5ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (44.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 354ms (Views: 349.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Travel" for 193.1.209.100 at 2015-04-13 17:40:05 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Travel"}
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" = ?[0m  [["category", "Travel"]]
+  Rendered items/index.html.erb within layouts/application (10.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 254ms (Views: 252.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:40:06 +0000
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:40:06 +0000
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:40:06 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:40:06 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:40:06 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 17:40:06 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:40:06 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:06 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:06 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:06 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:06 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:06 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:06 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:06 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:06 +0000
+
+
+Started POST "/items" for 193.1.209.100 at 2015-04-13 17:40:50 +0000
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kLR3JoY+M/y5bFYCim9sogR1ssP9LQbloI5SXmHg73BSMWwxoqzfB5pzJ+IxC76NCm66cI2UTylrmw0YEwOX8w==", "item"=>{"title"=>"Torii Tunnel", "description"=>"Torii Tunnel 721 x 480px @300dpi Japan", "price"=>"FREE", "image_url"=>"toriitunnel.jpg", "category"=>"Travel"}, "commit"=>"Create Item"}
+  [1m[35m (1.4ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "items" ("title", "description", "price", "image_url", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Torii Tunnel"], ["description", "Torii Tunnel 721 x 480px @300dpi Japan"], ["price", 0.0], ["image_url", "toriitunnel.jpg"], ["category", "Travel"], ["created_at", "2015-04-13 17:40:50.332419"], ["updated_at", "2015-04-13 17:40:50.332419"]]
+  [1m[35m (16.9ms)[0m  commit transaction
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items/16
+Completed 302 Found in 27ms (ActiveRecord: 18.8ms)
+
+
+Started GET "/items/16" for 193.1.209.100 at 2015-04-13 17:40:50 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 16]]
+  Rendered items/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 349ms (Views: 345.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:40:50 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 17:40:50 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:40:50 +0000
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:40:50 +0000
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:40:50 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:40:50 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:50 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:40:50 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:50 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:50 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:50 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:50 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:51 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:51 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:51 +0000
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:40:52 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (33.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 310ms (Views: 308.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/toriitunnel-c11e232fc58db60568156725c3f0bd87.jpg" for 193.1.209.100 at 2015-04-13 17:40:53 +0000
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Travel" for 193.1.209.100 at 2015-04-13 17:40:54 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Travel"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" = ?[0m  [["category", "Travel"]]
+  Rendered items/index.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 248ms (Views: 246.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:40:54 +0000
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:40:54 +0000
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:40:54 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:40:54 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 17:40:54 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:40:54 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:54 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:40:54 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:54 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:54 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:54 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:54 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:54 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:54 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:40:54 +0000
+
+
+Started GET "/items/8" for 193.1.209.100 at 2015-04-13 17:40:58 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered items/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 179ms (Views: 176.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cart/8" for 193.1.209.100 at 2015-04-13 17:41:00 +0000
+Processing by CartController#add as HTML
+  Parameters: {"id"=>"8"}
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/cart
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/cart" for 193.1.209.100 at 2015-04-13 17:41:00 +0000
+Processing by CartController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "8"]]
+  Rendered cart/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 324ms (Views: 321.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:41:36 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (28.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 300ms (Views: 296.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/items/new" for 193.1.209.100 at 2015-04-13 17:41:37 +0000
+Processing by ItemsController#new as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered items/_form.html.erb (3.9ms)
+  Rendered items/new.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 202ms (Views: 199.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/items" for 193.1.209.100 at 2015-04-13 17:42:35 +0000
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TX2yOwv6o1VH9tK3rqCAH3BoCv40zq03MXySJMjcBwCP+KksL2hPrmTpo1cVxFIwfnMCTUR35Pv6ac1iuj9/gw==", "item"=>{"title"=>"Tarsier", "description"=>"Tarsier 656 x 366px @96dpi Philippines", "price"=>"FREE", "image_url"=>"tarsier.jpg", "category"=>"Wildlife"}, "commit"=>"Create Item"}
+  [1m[35mItem Load (0.4ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "items" ("title", "description", "price", "image_url", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["title", "Tarsier"], ["description", "Tarsier 656 x 366px @96dpi Philippines"], ["price", 0.0], ["image_url", "tarsier.jpg"], ["category", "Wildlife"], ["created_at", "2015-04-13 17:42:35.219959"], ["updated_at", "2015-04-13 17:42:35.219959"]]
+  [1m[36m (14.0ms)[0m  [1mcommit transaction[0m
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items/17
+Completed 302 Found in 28ms (ActiveRecord: 15.2ms)
+
+
+Started GET "/items/17" for 193.1.209.100 at 2015-04-13 17:42:35 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 17]]
+  Rendered items/show.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 257ms (Views: 254.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:42:35 +0000
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:42:35 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 17:42:35 +0000
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:42:35 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:42:35 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:42:35 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:42:35 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 17:42:35 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 17:42:35 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:42:35 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 17:42:35 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:42:35 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:42:35 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:42:35 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 17:42:35 +0000
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:42:37 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (37.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 316ms (Views: 313.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/tarsier-b07615feff40c2983f8151c3ad1f51b9.jpg" for 193.1.209.100 at 2015-04-13 17:42:37 +0000
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Wildlife" for 193.1.209.100 at 2015-04-13 17:42:39 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Wildlife"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."category" = ?[0m  [["category", "Wildlife"]]
+  Rendered items/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 247ms (Views: 245.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:42:39 +0000
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:42:39 +0000
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:42:40 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 17:42:40 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:42:40 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:42:40 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:42:40 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 17:42:40 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 17:42:40 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 17:42:40 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:42:40 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:42:40 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:42:40 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:42:40 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 17:42:40 +0000
+
+
+Started GET "/items/17" for 193.1.209.100 at 2015-04-13 17:42:48 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 17]]
+  Rendered items/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 318ms (Views: 314.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items/new" for 193.1.209.100 at 2015-04-13 17:43:10 +0000
+Processing by ItemsController#new as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered items/_form.html.erb (3.3ms)
+  Rendered items/new.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 206ms (Views: 204.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/items" for 193.1.209.100 at 2015-04-13 17:44:06 +0000
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hhqb8CZE4pT7xiqw0tr9DhQ9DfXId/PcGvzfkK5r+g9En4DnAtYOb9jZW1Bpvi8hGiYFRrjOuhDR6YDW3IiCjA==", "item"=>{"title"=>"Eskaya", "description"=>"Eskaya 634 x 361px 31dpi Philippines", "price"=>"FREE", "image_url"=>"eskaya.jpg", "category"=>"Travel"}, "commit"=>"Create Item"}
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35m (1.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "items" ("title", "description", "price", "image_url", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Eskaya"], ["description", "Eskaya 634 x 361px 31dpi Philippines"], ["price", 0.0], ["image_url", "eskaya.jpg"], ["category", "Travel"], ["created_at", "2015-04-13 17:44:06.344766"], ["updated_at", "2015-04-13 17:44:06.344766"]]
+  [1m[35m (11.0ms)[0m  commit transaction
+Redirected to https://rails-tutorial-rdpolidario-2.c9.io/items/18
+Completed 302 Found in 27ms (ActiveRecord: 13.0ms)
+
+
+Started GET "/items/18" for 193.1.209.100 at 2015-04-13 17:44:06 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", 18]]
+  Rendered items/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 304ms (Views: 301.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:44:06 +0000
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:44:06 +0000
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:44:06 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:44:06 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:44:06 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 17:44:06 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:44:06 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 17:44:06 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 17:44:06 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 17:44:06 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:44:06 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:44:06 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:44:06 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:44:06 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 17:44:07 +0000
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 17:44:51 +0000
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mItem Load (1.4ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (41.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 330ms (Views: 323.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/eskaya-c812c4f3cc7c492393fa4943957ae906.jpg" for 193.1.209.100 at 2015-04-13 17:44:52 +0000
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Travel" for 193.1.209.100 at 2015-04-13 17:44:55 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Travel"}
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" = ?  [["category", "Travel"]]
+  Rendered items/index.html.erb within layouts/application (12.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 266ms (Views: 261.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 17:44:56 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:44:56 +0000
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:44:56 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 17:44:56 +0000
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:44:56 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 17:44:56 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 17:44:56 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 17:44:56 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 17:44:56 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 17:44:56 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:44:56 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:44:56 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:44:56 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 17:44:56 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 17:44:56 +0000
+
+
+Started GET "/items?utf8=%E2%9C%93&category=Wildlife" for 193.1.209.100 at 2015-04-13 18:07:33 +0000
+Processing by ItemsController#index as HTML
+  Parameters: {"utf8"=>"✓", "category"=>"Wildlife"}
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."category" = ?  [["category", "Wildlife"]]
+  Rendered items/index.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 387ms (Views: 380.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 18:07:34 +0000
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 18:07:34 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 18:07:34 +0000
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 18:07:34 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 18:07:34 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 18:07:34 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 18:07:34 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 18:07:34 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 18:07:34 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 18:07:34 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 18:07:34 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 18:07:34 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 18:07:34 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 18:07:34 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 18:07:34 +0000
+
+
+Started GET "/" for 193.1.209.100 at 2015-04-13 18:11:37 +0000
+Processing by SiteController#about as HTML
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered site/about.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 277ms (Views: 272.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 18:11:37 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 18:11:37 +0000
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 18:11:37 +0000
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 18:11:37 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 18:11:37 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 18:11:37 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 18:11:37 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 18:11:37 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 18:11:37 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 18:11:37 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 18:11:37 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 18:11:37 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 18:11:37 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 18:11:37 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 18:11:37 +0000
+
+
+Started GET "/assets/mainpic.jpg" for 193.1.209.100 at 2015-04-13 18:11:37 +0000
+
+
+Started GET "/" for 193.1.209.100 at 2015-04-13 18:42:35 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#about as HTML
+  Rendered site/about.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 1178ms (Views: 1162.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cart-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 18:42:37 +0000
+
+
+Started GET "/assets/graffotos-ba2f6cbac472eef1bd4953903fce6503.css?body=1" for 193.1.209.100 at 2015-04-13 18:42:37 +0000
+
+
+Started GET "/assets/items-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 18:42:37 +0000
+
+
+Started GET "/assets/scaffolds-f29a6883fc0f19ffd8f79678ad8cef98.css?body=1" for 193.1.209.100 at 2015-04-13 18:42:37 +0000
+
+
+Started GET "/assets/application-bafccfdc11d7c209fefdcf020bcd106e.css?body=1" for 193.1.209.100 at 2015-04-13 18:42:37 +0000
+
+
+Started GET "/assets/user-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 18:42:37 +0000
+
+
+Started GET "/assets/site-069e88c06b889877799890854d7f4c40.css?body=1" for 193.1.209.100 at 2015-04-13 18:42:37 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 193.1.209.100 at 2015-04-13 18:42:37 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 193.1.209.100 at 2015-04-13 18:42:37 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for 193.1.209.100 at 2015-04-13 18:42:37 +0000
+
+
+Started GET "/assets/cart-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 18:42:37 +0000
+
+
+Started GET "/assets/items-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 18:42:37 +0000
+
+
+Started GET "/assets/user-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 18:42:37 +0000
+
+
+Started GET "/assets/site-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 193.1.209.100 at 2015-04-13 18:42:37 +0000
+
+
+Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for 193.1.209.100 at 2015-04-13 18:42:37 +0000
+
+
+Started GET "/assets/mainpic.jpg" for 193.1.209.100 at 2015-04-13 18:42:38 +0000
