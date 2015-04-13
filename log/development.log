@@ -20585,3 +20585,72 @@ Started GET "/assets/application-367c100594a401afda66dc00316e49ba.js?body=1" for
 
 
 Started GET "/assets/mainpic.jpg" for 193.1.209.100 at 2015-04-13 18:42:38 +0000
+
+
+Started GET "/cart" for 193.1.209.100 at 2015-04-13 19:26:19 +0000
+Processing by CartController#index as HTML
+  Rendered cart/index.html.erb within layouts/application (25.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 318ms (Views: 316.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 193.1.209.100 at 2015-04-13 19:26:29 +0000
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (1.8ms)[0m  SELECT "items".* FROM "items"
+  Rendered items/index.html.erb within layouts/application (54.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 407ms (Views: 400.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/flower1-f68aa38c4710f6aaab48ac805a099da9.png" for 193.1.209.100 at 2015-04-13 19:26:29 +0000
+
+
+Started GET "/assets/flower2-89bf955810a9c980d9e908f81ba6d540.png" for 193.1.209.100 at 2015-04-13 19:26:29 +0000
+
+
+Started GET "/assets/wildlife1-262827376a22ccc3cdff18adaceded70.jpg" for 193.1.209.100 at 2015-04-13 19:26:29 +0000
+
+
+Started GET "/assets/banawe-c9be5d453ea82a6305754939250b7e0d.jpg" for 193.1.209.100 at 2015-04-13 19:26:29 +0000
+
+
+Started GET "/assets/elnido-fb65dc70083cce6f85029e5525370e1f.jpg" for 193.1.209.100 at 2015-04-13 19:26:29 +0000
+
+
+Started GET "/assets/boracay-96e33e9fa3a731f6e23617b1e979a5a5.png" for 193.1.209.100 at 2015-04-13 19:26:29 +0000
+
+
+Started GET "/assets/hkboats-aabfe494cabfbca05f38881df8b29079.jpg" for 193.1.209.100 at 2015-04-13 19:26:33 +0000
+
+
+Started GET "/items/10" for 193.1.209.100 at 2015-04-13 19:26:42 +0000
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mItem Load (0.6ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", 10]]
+  Rendered items/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 658ms (Views: 633.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/japlanterns-272f6cbcc2f7fda14d803fa228e901d9.jpg" for 193.1.209.100 at 2015-04-13 19:26:43 +0000
+
+
+Started GET "/assets/rose1-35de6ebc116794b2fb5549a607843285.jpg" for 193.1.209.100 at 2015-04-13 19:26:51 +0000
+
+
+Started GET "/assets/greatwall-8ef8f0786dcd7c32ddfeea7659446557.jpg" for 193.1.209.100 at 2015-04-13 19:26:56 +0000
+
+
+Started GET "/assets/flamingos-70ead0ad92b199d3de2db1284f416d2a.jpg" for 193.1.209.100 at 2015-04-13 19:27:00 +0000
+
+
+Started GET "/assets/toriitunnel-c11e232fc58db60568156725c3f0bd87.jpg" for 193.1.209.100 at 2015-04-13 19:27:03 +0000
+
+
+Started GET "/assets/tarsier-b07615feff40c2983f8151c3ad1f51b9.jpg" for 193.1.209.100 at 2015-04-13 19:27:04 +0000
+
+
+Started GET "/assets/eskaya-c812c4f3cc7c492393fa4943957ae906.jpg" for 193.1.209.100 at 2015-04-13 19:27:08 +0000
