@@ -1,4 +1,7 @@
 class ItemsController < ApplicationController
+  # RESTful
+  load_and_authorize_resource
+  
   before_action :set_item, only: [:show, :edit, :update, :destroy]
 
   # GET /items

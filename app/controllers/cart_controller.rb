@@ -1,4 +1,7 @@
 class CartController < ApplicationController
+  # Non-RESTful
+  authorize_resource class: false
+  
   def add
     id = params[:id]
     

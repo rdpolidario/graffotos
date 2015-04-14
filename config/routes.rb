@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
+  devise_for :users
   get '/about' => 'site#about'
   get '/contact' => 'site#contact' 
   get '/admin' => 'user#admin_login'
   get '/logout' => 'user#logout'
   get '/cart' => 'cart#index'
   get '/cart/:id' => 'cart#add'
-
-
+  
   resources :items
 
   # The priority is based upon order of creation: first created -> highest priority.

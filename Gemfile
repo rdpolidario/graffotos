@@ -49,7 +49,8 @@ group :development, :test do
 #       Please make sure that it is not already in your Gemfile before uncommenting it.
 # gem 'sass-rails'
  gem 'devise'
-
+ gem 'cancancan', '~> 1.10'
+ 
 group :production do
   gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
