@@ -2,7 +2,8 @@ class ItemsController < ApplicationController
   # RESTful
   load_and_authorize_resource
   
-  before_action :set_item, only: [:show, :edit, :update, :destroy]
+  #before_action :set_item, only: [:show, :edit, :update, :destroy] //commented out for the user not to be able to edit products
+  before_action :set_item, only: [:show]
 
   # GET /items
   # GET /items.json
