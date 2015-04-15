@@ -23,6 +23,8 @@ class ApplicationController < ActionController::Base
   rescue_from CanCan::AccessDenied do |exception|
     flash[:alert] = 'You need to login first to add to cart.'
     redirect_to :back
+
+
 	end
   
 end
