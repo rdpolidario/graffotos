@@ -7,7 +7,7 @@ class Ability
     can [:index, :show], Item
     if user.present?
       can [:add, :index, :change, :checkout], :cart
-      can [:index, :show, :new, :create, :edit, :update, :destroy], Item
+  #    can [:index, :show, :new, :create, :edit, :update, :destroy], Item
     end
     
     
