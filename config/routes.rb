@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
   get '/about' => 'site#about'
-  get '/contact' => 'site#contact' 
+  get '/contact' => 'site#contact'
+  get '/thankyou' => 'site#thankyou' 
   get '/admin' => 'user#admin_login'
   get '/logout' => 'user#logout'
   get '/cart' => 'cart#index'
