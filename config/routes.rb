@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :profiles
+
   devise_for :users
   get '/about' => 'site#about'
   get '/contact' => 'site#contact'
@@ -7,6 +9,7 @@ Rails.application.routes.draw do
   get '/logout' => 'user#logout'
   get '/cart' => 'cart#index'
   get '/cart/:id' => 'cart#add'
+  get '/myprofile' => 'profiles#myprofile' 
   
   resources :items
 
