@@ -1,5 +1,7 @@
 class ProfilesController < ApplicationController
   before_action :set_profile, only: [:show, :edit, :update, :destroy]
+  
+  respond_to :html
 
   # GET /profiles
   # GET /profiles.json
@@ -21,7 +23,7 @@ class ProfilesController < ApplicationController
   def new
     @user = User.find(current_user.id)
     @profile = Profile.new
-    @profile.user_id = @user.id
+    # @profile.user_id = @user.id
     respond_with(@profile)
   end
 
@@ -33,6 +35,7 @@ class ProfilesController < ApplicationController
   # POST /profiles.json
   def create
     @profile = Profile.new(profile_params)
+    @profile.user = current_user
 
     respond_to do |format|
       if @profile.save
@@ -68,6 +71,18 @@ class ProfilesController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def myprofile
+    profile = Profile.find_by_user_id(current_user.id)
+  
+    if profile.nil?
+        redirect_to "/profiles/new"
+    else
+      @user = User.find(current_user.id)
+      @profile = Profile.find_by_user_id(@user.id)
+      redirect_to "/profiles/#{@profile.id}"
+    end
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -79,18 +94,6 @@ class ProfilesController < ApplicationController
     def profile_params
       params.require(:profile).permit(:firstname, :lastname, :address, :mobile, :user_id)
     end
-    
-def myprofile
-   profile = Profile.find_by_user_id(current_user.id)
-  
-   if profile.nil?
-   redirect_to "/profiles/new"
-   else
-   @user = User.find(current_user.id)
-   @profile = Profile.find_by_user_id(@user.id)
-   redirect_to "/profiles/#{@profile.id}"
-   end
- end
 
 end
 
