@@ -5,11 +5,17 @@ Rails.application.routes.draw do
   get '/about' => 'site#about'
   get '/contact' => 'site#contact'
   get '/thankyou' => 'site#thankyou' 
+  
   get '/admin' => 'user#admin_login'
   get '/logout' => 'user#logout'
+  
   get '/cart' => 'cart#index'
+  get '/cart/clear' => 'cart#clearCart'
   get '/cart/:id' => 'cart#add'
+  
   get '/myprofile' => 'profiles#myprofile' 
+  get '/Admin' => 'user#admin_login'
+  get '/logout' => 'user#logout' 
   
   resources :items
 
