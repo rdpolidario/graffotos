@@ -10,7 +10,6 @@ Rails.application.routes.draw do
   get '/logout' => 'user#logout'
   
   get '/cart' => 'cart#index'
-  get '/cart/clear' => 'cart#clearCart'
   get '/cart/:id' => 'cart#add'
   
   get '/myprofile' => 'profiles#myprofile' 
