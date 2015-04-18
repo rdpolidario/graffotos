@@ -16,9 +16,8 @@
           <li><a href="/items">Products</a></li>
           <li><a href="/contact">Contact Us</a></li>
           <% if user_signed_in? %>
-            <li>
-            <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
-            </li>
+            <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
+            <li><%= link_to "Profile", edit_profile_path(current_user.profile) %></li>
           <% else %>
             <li>
             <%= link_to('Login', new_user_session_path)  %>  
@@ -45,7 +44,7 @@
 <% end %>
 
  <% if current_user %>
-    Welcome <%= current_user.email %> <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+    Welcome <%= current_user.email %>
 <% end %>
 
   		<%= yield %>
